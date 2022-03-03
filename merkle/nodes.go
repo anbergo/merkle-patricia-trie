@@ -1,6 +1,8 @@
-package main
+package merkle
 
-import "github.com/ethereum/go-ethereum/rlp"
+import (
+	"github.com/ethereum/go-ethereum/rlp"
+)
 
 type Node interface {
 	Hash() []byte // common.Hash

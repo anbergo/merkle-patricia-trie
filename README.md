@@ -201,7 +201,7 @@ Ethereum has 3 Merkle Patricia Tries: Transaction Trie, Receipt Trie and State T
 
 Since the `transactionRoot` is the merkle root hash of all the transactions included in the block, we could verify our implemenation by taking all the transactions, then store them in our trie, compute its merkle root hash, and in the end compare it with the `transactionRoot` in the block header.
 
-For instance, I picked the [block 10467135 on mainnet](https://etherscan.io/block/10467135), and saved all the 193 transactions into a [transactions.json](./transactions.json) file.
+For instance, I picked the [block 10467135 on mainnet](https://etherscan.io/block/10467135), and saved all the 193 transactions into a [transactions.json](merkle/transactions.json) file.
 
 Since the transaction root for block `10467135` is [`0xbb345e208bda953c908027a45aa443d6cab6b8d2fd64e83ec52f1008ddeafa58`](https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x9fb73f&boolean=true&apikey=YourApiKeyToken). I can create a test case that adds the 193 transactions of block 10467135 to our Trie and check:
 

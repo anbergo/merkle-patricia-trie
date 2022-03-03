@@ -1,4 +1,4 @@
-package main
+package merkle
 
 type Trie struct {
 	root Node

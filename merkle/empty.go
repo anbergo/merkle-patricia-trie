@@ -1,6 +1,8 @@
-package main
+package merkle
 
-import "encoding/hex"
+import (
+	"encoding/hex"
+)
 
 var (
 	EmptyNodeRaw     = []byte{}

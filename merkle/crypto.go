@@ -1,4 +1,4 @@
-package main
+package merkle
 
 import "golang.org/x/crypto/sha3"
 
