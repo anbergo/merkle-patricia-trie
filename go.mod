@@ -1,4 +1,4 @@
-module github/anbergo/merkle-patrica-trie
+module github.com/anbergo/merkle-patrica-trie
 
 go 1.16
 
